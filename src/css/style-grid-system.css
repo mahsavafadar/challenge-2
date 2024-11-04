@@ -1,0 +1,101 @@
+/* Small (S) --------------------*/
+
+@media (min-width: 414px) and (max-width: 750px) {
+  .requests > h3 {
+    margin-right: 5rem;
+  }
+  .card__body {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 1.7rem 0;
+  }
+}
+
+/* Medium (M) ----------------------*/
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .card {
+    grid-template-columns: repeat(2, auto);
+  }
+  .requests > h3 {
+    font-size: 2rem;
+    margin-right: 6rem;
+  }
+  .card__body {
+    width: 100%;
+    max-width: 400px;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+/* Large (L) ---------------*/
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .requests {
+    width: 100%;
+    margin: 2.5rem 0;
+  }
+  .requests > h3 {
+    font-size: 2.5rem;
+  }
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+  }
+  .card__body {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* X Large (XL) -------------------------*/
+
+@media (min-width: 1501px) and (max-width: 2000px) {
+  .requests {
+    width: 90%;
+    margin: 2.5rem auto 0;
+  }
+  .requests > h3 {
+    font-size: 2.5rem;
+    margin-right: 9rem;
+  }
+  .card {
+    grid-template-columns: repeat(3, auto);
+    gap: 3rem;
+  }
+  .card__body {
+    width: 100%;
+    max-width: 480px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* XX Large (XXL) ---------------------*/
+
+@media screen and (min-width: 2001px) {
+  .requests {
+    width: 75%;
+    margin: 2.5rem auto 0;
+  }
+
+  .requests > h3 {
+    font-size: 3rem;
+    margin-right: 220px;
+  }
+  .card {
+    grid-template-columns: repeat(3, auto);
+    gap: 3rem;
+    padding: 0 10rem;
+  }
+  .card__body {
+    width: 100%;
+    max-width: 480px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+}

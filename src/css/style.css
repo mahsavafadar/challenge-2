@@ -1,0 +1,156 @@
+@import url("./fonts.css");
+
+/* VARIABLES */
+
+:root {
+  --color-fonts-Text: #1e1e1e;
+  --color-fonts-secondaryText: #696969;
+  --color-secondary-light: #afcedd;
+  --color-secondary-dark: #234894;
+  --color-thirdly-dark: #219f95;
+  --color-white: #ffffff;
+  --color-border: #ccc;
+  --color-background-card: #f4d1a699;
+}
+
+/* RESETS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: vazir;
+  color: var(--color-fonts-Text);
+  text-align: right;
+}
+
+
+/* ------ REQUESTS ------ */
+.requests {
+  width: 100%;
+  margin-top: 2.5rem;
+  
+}
+.requests > h3 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin: 0 3.8rem 1.5rem 0;
+}
+
+/* -------- CARDS ----------- */
+.card {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  gap: 2rem;
+  
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.7rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 0 6px 0.5px var(--color-border);
+  position: relative;
+}
+
+.card__body:nth-child(even) {
+  background-color: var(--color-background-card);
+}
+
+/*  ------- CARD TITLE ---------- */
+
+.card__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 1.7rem;
+}
+.card__title-upload {
+  display: flex;
+  align-items: baseline;
+}
+.upload-number {
+  font-size: 1.4rem;
+  background-color: var(--color-secondary-light);
+  color: var(--color-secondary-dark);
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.upload-text {
+  font-size: 1.4rem;
+  color: var(--color-secondary-dark);
+  padding-right: 1rem;
+}
+
+.card__title-date {
+  font-size: 1.2rem;
+  color: var(--color-fonts-secondaryText);
+  padding-left: 1.7rem;
+}
+
+/* ----------- CARD SUBTITLE -------- */
+
+.card__subtitle {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 1.7rem 0;
+}
+.card__subtitle-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.card__subtitle-text {
+  color: var(--color-fonts-secondaryText);
+  font-size: 1.2rem;
+}
+
+/* ----- CARD FOOTER ------ */
+
+.card__footer {
+  display: flex;
+  margin: 2.5rem 1.7rem 0;
+  align-items: center;
+}
+
+.card__footer-profile {
+  width: 50px;
+  height: 50px;
+}
+.card__footer-username {
+  font-size: 1.6rem;
+  margin-right: 8px;
+}
+
+/* ------- CARD BUTTON ----------- */
+
+.card__btn {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2rem;
+  background-color: var(--color-thirdly-dark);
+  color: var(--color-white);
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  font-size: 1.4rem;
+  font-family: vazir;
+}
